@@ -1,5 +1,3 @@
-from tkinter.constants import ROUND
-
 import streamlit as st
 import re
 st.markdown("<h1 style='text-align: center;'>Density Checker</h1>", unsafe_allow_html=True)
@@ -25,3 +23,4 @@ if text:
         col1.markdown(f"<h5 style='text-align:center;'>{keys[i]}</h5>", unsafe_allow_html=True)
         col2.markdown(f"<h5 style='text-align:center;'>{values[i]}</h5>", unsafe_allow_html=True)
         col3.markdown(f"<h5 style=\"text-align:center;\">{round((values[i]/t_len)*100)}%</h5>", unsafe_allow_html=True)
+
